@@ -13,11 +13,15 @@ body {
     margin: 5px 0;
     position: relative;
     overflow: hidden;
+    width: 2rem;
+    height: 2rem;
     transition: 0.3s ease;
   }
 
   .faq.active {
     background-color: rgb(221, 214, 214);
+    width: 100%;
+    height: 10rem;
   }
 
   .faq-title {
@@ -65,5 +69,21 @@ body {
   }
 
   .faq.active .faq-toggle {
-    background-color: gray;
+    background-color: rgb(221, 214, 214);
+  }
+
+  @media (max-width: 900px) {
+    .faq {
+      background-color: #ac8e3d;
+      border: 5px solid whitesmoke;
+      border-radius: 8px;
+      margin: 5px 0;
+      position: relative;
+      overflow: hidden;
+      width: 2rem;
+      transition: 0.3s ease;
+    }
+    .faq.active {
+      width: 22rem;
+    } 
   }
