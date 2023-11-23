@@ -15,13 +15,17 @@ body {
     overflow: hidden;
     width: 2rem;
     height: 2rem;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
   }
 
   .faq.active {
     background-color: rgb(221, 214, 214);
     width: 100%;
     height: 10rem;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .faq-title {
